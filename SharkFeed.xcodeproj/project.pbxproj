@@ -7,25 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F83B31E61D90A52E00EE1173 /* SFFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B31E51D90A52E00EE1173 /* SFFeedViewController.m */; };
+		F83B31EB1D90A59200EE1173 /* SFFeedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B31EA1D90A59200EE1173 /* SFFeedObject.m */; };
+		F83B31EF1D90A6CB00EE1173 /* SFFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B31EE1D90A6CB00EE1173 /* SFFetchedResultsController.m */; };
+		F83B31F21D90A6F800EE1173 /* SFWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B31F11D90A6F800EE1173 /* SFWebService.m */; };
+		F83B31F61D90AAAF00EE1173 /* SFFeedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B31F51D90AAAF00EE1173 /* SFFeedCollectionViewCell.m */; };
 		F8BBEC8A1D9081C800BCFDF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBEC891D9081C800BCFDF7 /* main.m */; };
 		F8BBEC8D1D9081C800BCFDF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBEC8C1D9081C800BCFDF7 /* AppDelegate.m */; };
-		F8BBEC901D9081C800BCFDF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBEC8F1D9081C800BCFDF7 /* ViewController.m */; };
 		F8BBEC931D9081C800BCFDF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BBEC911D9081C800BCFDF7 /* Main.storyboard */; };
 		F8BBEC951D9081C800BCFDF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8BBEC941D9081C800BCFDF7 /* Assets.xcassets */; };
 		F8BBEC981D9081C800BCFDF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BBEC961D9081C800BCFDF7 /* LaunchScreen.storyboard */; };
+		F8BBECA41D9083CF00BCFDF7 /* SFLightBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBECA31D9083CF00BCFDF7 /* SFLightBoxView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F83B31E41D90A52E00EE1173 /* SFFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFeedViewController.h; sourceTree = "<group>"; };
+		F83B31E51D90A52E00EE1173 /* SFFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFeedViewController.m; sourceTree = "<group>"; };
+		F83B31E91D90A59200EE1173 /* SFFeedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFeedObject.h; sourceTree = "<group>"; };
+		F83B31EA1D90A59200EE1173 /* SFFeedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFeedObject.m; sourceTree = "<group>"; };
+		F83B31ED1D90A6CB00EE1173 /* SFFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFetchedResultsController.h; sourceTree = "<group>"; };
+		F83B31EE1D90A6CB00EE1173 /* SFFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFetchedResultsController.m; sourceTree = "<group>"; };
+		F83B31F01D90A6F800EE1173 /* SFWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFWebService.h; sourceTree = "<group>"; };
+		F83B31F11D90A6F800EE1173 /* SFWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFWebService.m; sourceTree = "<group>"; };
+		F83B31F41D90AAAF00EE1173 /* SFFeedCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFeedCollectionViewCell.h; sourceTree = "<group>"; };
+		F83B31F51D90AAAF00EE1173 /* SFFeedCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFeedCollectionViewCell.m; sourceTree = "<group>"; };
+		F83B31F71D90AE8400EE1173 /* SFConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFConstants.h; sourceTree = "<group>"; };
 		F8BBEC851D9081C800BCFDF7 /* SharkFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharkFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BBEC891D9081C800BCFDF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8BBEC8B1D9081C800BCFDF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F8BBEC8C1D9081C800BCFDF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F8BBEC8E1D9081C800BCFDF7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F8BBEC8F1D9081C800BCFDF7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F8BBEC921D9081C800BCFDF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8BBEC941D9081C800BCFDF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8BBEC971D9081C800BCFDF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8BBEC991D9081C800BCFDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8BBECA21D9083CF00BCFDF7 /* SFLightBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLightBoxView.h; sourceTree = "<group>"; };
+		F8BBECA31D9083CF00BCFDF7 /* SFLightBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLightBoxView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +55,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F83B31E71D90A53A00EE1173 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F83B31E41D90A52E00EE1173 /* SFFeedViewController.h */,
+				F83B31E51D90A52E00EE1173 /* SFFeedViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F83B31E81D90A54500EE1173 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBECA21D9083CF00BCFDF7 /* SFLightBoxView.h */,
+				F8BBECA31D9083CF00BCFDF7 /* SFLightBoxView.m */,
+				F83B31F41D90AAAF00EE1173 /* SFFeedCollectionViewCell.h */,
+				F83B31F51D90AAAF00EE1173 /* SFFeedCollectionViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F83B31EC1D90A59900EE1173 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F83B31E91D90A59200EE1173 /* SFFeedObject.h */,
+				F83B31EA1D90A59200EE1173 /* SFFeedObject.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F83B31F31D90A70E00EE1173 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F83B31ED1D90A6CB00EE1173 /* SFFetchedResultsController.h */,
+				F83B31EE1D90A6CB00EE1173 /* SFFetchedResultsController.m */,
+				F83B31F01D90A6F800EE1173 /* SFWebService.h */,
+				F83B31F11D90A6F800EE1173 /* SFWebService.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		F8BBEC7C1D9081C700BCFDF7 = {
 			isa = PBXGroup;
 			children = (
@@ -60,9 +116,12 @@
 			children = (
 				F8BBEC8B1D9081C800BCFDF7 /* AppDelegate.h */,
 				F8BBEC8C1D9081C800BCFDF7 /* AppDelegate.m */,
-				F8BBEC8E1D9081C800BCFDF7 /* ViewController.h */,
-				F8BBEC8F1D9081C800BCFDF7 /* ViewController.m */,
 				F8BBEC911D9081C800BCFDF7 /* Main.storyboard */,
+				F83B31E71D90A53A00EE1173 /* Controllers */,
+				F83B31E81D90A54500EE1173 /* Views */,
+				F83B31EC1D90A59900EE1173 /* Model */,
+				F83B31F31D90A70E00EE1173 /* Managers */,
+				F83B31F71D90AE8400EE1173 /* SFConstants.h */,
 				F8BBEC941D9081C800BCFDF7 /* Assets.xcassets */,
 				F8BBEC961D9081C800BCFDF7 /* LaunchScreen.storyboard */,
 				F8BBEC991D9081C800BCFDF7 /* Info.plist */,
@@ -149,8 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8BBEC901D9081C800BCFDF7 /* ViewController.m in Sources */,
+				F8BBECA41D9083CF00BCFDF7 /* SFLightBoxView.m in Sources */,
+				F83B31F61D90AAAF00EE1173 /* SFFeedCollectionViewCell.m in Sources */,
+				F83B31E61D90A52E00EE1173 /* SFFeedViewController.m in Sources */,
 				F8BBEC8D1D9081C800BCFDF7 /* AppDelegate.m in Sources */,
+				F83B31F21D90A6F800EE1173 /* SFWebService.m in Sources */,
+				F83B31EF1D90A6CB00EE1173 /* SFFetchedResultsController.m in Sources */,
+				F83B31EB1D90A59200EE1173 /* SFFeedObject.m in Sources */,
 				F8BBEC8A1D9081C800BCFDF7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +366,7 @@
 				F8BBEC9E1D9081C800BCFDF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

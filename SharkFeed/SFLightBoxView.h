@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SFLightBoxView.h
 //  SharkFeed
 //
 //  Created by Brandon Askea on 9/19/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SFLightBoxView : UIView
 
 @end
-
