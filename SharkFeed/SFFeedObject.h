@@ -23,6 +23,10 @@
 
 @property (assign) BOOL isMissingImage;
 
+@property (assign) BOOL didPresentImage;
+
+@property (assign) NSUInteger idx; // index in collection
+
 -(void)configureNewObject;
 -(void)flushThumb;
 

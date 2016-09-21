@@ -8,8 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "SFFetchedResultsController.h"
+#import "SFConstants.h"
 
 @interface SFWebService : NSObject
 -(id)initWithFetchResultsController:(SFFetchedResultsController *)fetchedResultsController;
+-(void)downloadImageWithURL:(NSString *)urlString forIndex:(NSUInteger)idx andCompletion:(PhotoCompletion)completion;
 -(void)loadNextPage;
+-(void)refresh;
+-(void)downloadingImageForIndex:(NSUInteger)idx;
+-(BOOL)isDownloadingImageForIndex:(NSUInteger)idx;
 @end

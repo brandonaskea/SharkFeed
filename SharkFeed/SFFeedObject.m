@@ -17,6 +17,7 @@
     self.thumbImg = nil;
     self.imgURL = @"";
     self.isMissingImage = NO; // Absence of image in Flickr. Failure to load.
+    self.didPresentImage = NO; // Mark as not presented so it will fade in.
 }
 
 -(void)flushThumb {

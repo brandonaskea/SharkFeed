@@ -7,20 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F82A09401D922387008A486F /* SFPullToRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A093F1D922387008A486F /* SFPullToRefreshView.m */; };
+		F82A09441D92837A008A486F /* UIColor+SFColors.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A09431D92837A008A486F /* UIColor+SFColors.m */; };
 		F83B31E61D90A52E00EE1173 /* SFFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B31E51D90A52E00EE1173 /* SFFeedViewController.m */; };
 		F83B31EB1D90A59200EE1173 /* SFFeedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B31EA1D90A59200EE1173 /* SFFeedObject.m */; };
 		F83B31EF1D90A6CB00EE1173 /* SFFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B31EE1D90A6CB00EE1173 /* SFFetchedResultsController.m */; };
 		F83B31F21D90A6F800EE1173 /* SFWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B31F11D90A6F800EE1173 /* SFWebService.m */; };
 		F83B31F61D90AAAF00EE1173 /* SFFeedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B31F51D90AAAF00EE1173 /* SFFeedCollectionViewCell.m */; };
+		F885DB581D91FD7800970FAA /* SFLightBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F885DB571D91FD7800970FAA /* SFLightBoxViewController.m */; };
 		F8BBEC8A1D9081C800BCFDF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBEC891D9081C800BCFDF7 /* main.m */; };
 		F8BBEC8D1D9081C800BCFDF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBEC8C1D9081C800BCFDF7 /* AppDelegate.m */; };
 		F8BBEC931D9081C800BCFDF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BBEC911D9081C800BCFDF7 /* Main.storyboard */; };
 		F8BBEC951D9081C800BCFDF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8BBEC941D9081C800BCFDF7 /* Assets.xcassets */; };
 		F8BBEC981D9081C800BCFDF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BBEC961D9081C800BCFDF7 /* LaunchScreen.storyboard */; };
 		F8BBECA41D9083CF00BCFDF7 /* SFLightBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBECA31D9083CF00BCFDF7 /* SFLightBoxView.m */; };
+		F8DC99721D93257E00F7D3E7 /* sharky.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DC99711D93257E00F7D3E7 /* sharky.png */; };
+		F8DC99741D932BBA00F7D3E7 /* MissingImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DC99731D932BBA00F7D3E7 /* MissingImage.png */; };
+		F8DC99761D93314E00F7D3E7 /* SFLabelLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F8DC99751D93314E00F7D3E7 /* SFLabelLogo.png */; };
+		F8F2EBD81D934148002C9445 /* SFLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F2EBD71D934148002C9445 /* SFLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F82A093E1D922387008A486F /* SFPullToRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPullToRefreshView.h; sourceTree = "<group>"; };
+		F82A093F1D922387008A486F /* SFPullToRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPullToRefreshView.m; sourceTree = "<group>"; };
+		F82A09421D92837A008A486F /* UIColor+SFColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SFColors.h"; sourceTree = "<group>"; };
+		F82A09431D92837A008A486F /* UIColor+SFColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SFColors.m"; sourceTree = "<group>"; };
 		F83B31E41D90A52E00EE1173 /* SFFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFeedViewController.h; sourceTree = "<group>"; };
 		F83B31E51D90A52E00EE1173 /* SFFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFeedViewController.m; sourceTree = "<group>"; };
 		F83B31E91D90A59200EE1173 /* SFFeedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFeedObject.h; sourceTree = "<group>"; };
@@ -32,6 +43,8 @@
 		F83B31F41D90AAAF00EE1173 /* SFFeedCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFeedCollectionViewCell.h; sourceTree = "<group>"; };
 		F83B31F51D90AAAF00EE1173 /* SFFeedCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFeedCollectionViewCell.m; sourceTree = "<group>"; };
 		F83B31F71D90AE8400EE1173 /* SFConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFConstants.h; sourceTree = "<group>"; };
+		F885DB561D91FD7800970FAA /* SFLightBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLightBoxViewController.h; sourceTree = "<group>"; };
+		F885DB571D91FD7800970FAA /* SFLightBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLightBoxViewController.m; sourceTree = "<group>"; };
 		F8BBEC851D9081C800BCFDF7 /* SharkFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharkFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BBEC891D9081C800BCFDF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8BBEC8B1D9081C800BCFDF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,6 +55,10 @@
 		F8BBEC991D9081C800BCFDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8BBECA21D9083CF00BCFDF7 /* SFLightBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLightBoxView.h; sourceTree = "<group>"; };
 		F8BBECA31D9083CF00BCFDF7 /* SFLightBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLightBoxView.m; sourceTree = "<group>"; };
+		F8DC99711D93257E00F7D3E7 /* sharky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharky.png; sourceTree = "<group>"; };
+		F8DC99731D932BBA00F7D3E7 /* MissingImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MissingImage.png; sourceTree = "<group>"; };
+		F8DC99751D93314E00F7D3E7 /* SFLabelLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SFLabelLogo.png; sourceTree = "<group>"; };
+		F8F2EBD71D934148002C9445 /* SFLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SFLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +72,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F82A09411D9282B0008A486F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F83B31F71D90AE8400EE1173 /* SFConstants.h */,
+				F82A09421D92837A008A486F /* UIColor+SFColors.h */,
+				F82A09431D92837A008A486F /* UIColor+SFColors.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		F83B31E71D90A53A00EE1173 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				F83B31E41D90A52E00EE1173 /* SFFeedViewController.h */,
 				F83B31E51D90A52E00EE1173 /* SFFeedViewController.m */,
+				F885DB561D91FD7800970FAA /* SFLightBoxViewController.h */,
+				F885DB571D91FD7800970FAA /* SFLightBoxViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -69,6 +98,8 @@
 			children = (
 				F8BBECA21D9083CF00BCFDF7 /* SFLightBoxView.h */,
 				F8BBECA31D9083CF00BCFDF7 /* SFLightBoxView.m */,
+				F82A093E1D922387008A486F /* SFPullToRefreshView.h */,
+				F82A093F1D922387008A486F /* SFPullToRefreshView.m */,
 				F83B31F41D90AAAF00EE1173 /* SFFeedCollectionViewCell.h */,
 				F83B31F51D90AAAF00EE1173 /* SFFeedCollectionViewCell.m */,
 			);
@@ -121,8 +152,12 @@
 				F83B31E81D90A54500EE1173 /* Views */,
 				F83B31EC1D90A59900EE1173 /* Model */,
 				F83B31F31D90A70E00EE1173 /* Managers */,
-				F83B31F71D90AE8400EE1173 /* SFConstants.h */,
+				F82A09411D9282B0008A486F /* Utility */,
 				F8BBEC941D9081C800BCFDF7 /* Assets.xcassets */,
+				F8F2EBD71D934148002C9445 /* SFLogo.png */,
+				F8DC99731D932BBA00F7D3E7 /* MissingImage.png */,
+				F8DC99751D93314E00F7D3E7 /* SFLabelLogo.png */,
+				F8DC99711D93257E00F7D3E7 /* sharky.png */,
 				F8BBEC961D9081C800BCFDF7 /* LaunchScreen.storyboard */,
 				F8BBEC991D9081C800BCFDF7 /* Info.plist */,
 				F8BBEC881D9081C800BCFDF7 /* Supporting Files */,
@@ -195,9 +230,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8DC99741D932BBA00F7D3E7 /* MissingImage.png in Resources */,
 				F8BBEC981D9081C800BCFDF7 /* LaunchScreen.storyboard in Resources */,
+				F8DC99761D93314E00F7D3E7 /* SFLabelLogo.png in Resources */,
 				F8BBEC951D9081C800BCFDF7 /* Assets.xcassets in Resources */,
 				F8BBEC931D9081C800BCFDF7 /* Main.storyboard in Resources */,
+				F8F2EBD81D934148002C9445 /* SFLogo.png in Resources */,
+				F8DC99721D93257E00F7D3E7 /* sharky.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +251,11 @@
 				F83B31F61D90AAAF00EE1173 /* SFFeedCollectionViewCell.m in Sources */,
 				F83B31E61D90A52E00EE1173 /* SFFeedViewController.m in Sources */,
 				F8BBEC8D1D9081C800BCFDF7 /* AppDelegate.m in Sources */,
+				F885DB581D91FD7800970FAA /* SFLightBoxViewController.m in Sources */,
 				F83B31F21D90A6F800EE1173 /* SFWebService.m in Sources */,
 				F83B31EF1D90A6CB00EE1173 /* SFFetchedResultsController.m in Sources */,
+				F82A09401D922387008A486F /* SFPullToRefreshView.m in Sources */,
+				F82A09441D92837A008A486F /* UIColor+SFColors.m in Sources */,
 				F83B31EB1D90A59200EE1173 /* SFFeedObject.m in Sources */,
 				F8BBEC8A1D9081C800BCFDF7 /* main.m in Sources */,
 			);

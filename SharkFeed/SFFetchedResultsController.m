@@ -57,9 +57,25 @@
     return self.feedObjects.count;
 }
 
--(void)flushThumbs {
+-(void)flushAllObjects {
+    [self.feedObjects removeAllObjects];
+}
+
+-(void)flushAllThumbs {
     for (SFFeedObject *object in self.feedObjects) {
         [object flushThumb];
+    }
+}
+
+-(void)assignImage:(UIImage *)image forIndex:(NSUInteger)idx {
+    
+    SFFeedObject *object = [self getObjectAtIndex:idx];
+    
+    if (image) {
+        object.thumbImg = image;
+    }
+    else {
+        object.isMissingImage = YES;
     }
 }
 

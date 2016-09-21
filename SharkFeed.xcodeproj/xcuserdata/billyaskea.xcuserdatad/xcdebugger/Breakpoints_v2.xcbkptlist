@@ -10,12 +10,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SharkFeed/SFFeedViewController.m"
-            timestampString = "496053168.048907"
+            timestampString = "496190483.121033"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "-didReceiveMemoryWarning"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SharkFeed/SFFeedCollectionViewCell.m"
+            timestampString = "496185888.138425"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "-configureCellWithFeedObject:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SFFeedCollectionViewCell configureCellWithFeedObject:]"
+                  moduleName = "SharkFeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/billyaskea/Documents/Developer/SharkFeed/SharkFeed/SFFeedCollectionViewCell.m"
+                  timestampString = "496190484.138577"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "612">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__56-[SFFeedCollectionViewCell configureCellWithFeedObject:]_block_invoke.58"
+                  moduleName = "SharkFeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/billyaskea/Documents/Developer/SharkFeed/SharkFeed/SFFeedCollectionViewCell.m"
+                  timestampString = "496190484.138929"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SharkFeed/SFFetchedResultsController.m"
+            timestampString = "496184756.742712"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "-assignImage:forIndex:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

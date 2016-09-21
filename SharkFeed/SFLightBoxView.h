@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SFFeedObject.h"
 
 @interface SFLightBoxView : UIView
+
+-(void)configureLightBoxWithConstraintsTop:(NSLayoutConstraint *)top left:(NSLayoutConstraint *)left bottom:(NSLayoutConstraint *)bottom right:(NSLayoutConstraint *)right width:(NSLayoutConstraint *)width height:(NSLayoutConstraint *)height;
+
+-(void)buildLightBoxWithObject:(SFFeedObject *)object fromRect:(CGRect)rect;
 
 @end

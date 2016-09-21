@@ -8,11 +8,29 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^ThumbCompletion)(BOOL completed, UIImage* image);
+#pragma mark - Block typedefs
+typedef void (^PhotoCompletion)(BOOL completed, UIImage* image, NSUInteger idx);
+typedef void (^RefreshCompletion)(BOOL completed);
 
 #pragma mark - SFFeedViewController
+static CGFloat kLaunchImageBounce = 1.25;
 static NSString * const kFeedCellIdentifier = @"FeedCell";
+static CGFloat kFeedCellCornerRadius = 6;
+static CGFloat kFeedCellHW = 120; // Height and Width of Cell
+static CGFloat kFeedCellInsets = 20;
+static CGFloat kFeedCellPadding = 12;
+static CGFloat kFeedCellCellsPerRow = 5;
 static double kImageFadeDuration = 0.18;
+static CGFloat kNavBarHeight = 61;
+static NSString * const kMissingImage = @"MissingImage";
+
+#pragma mark - SFLightBoxViewController
+static double kLightBoxFadeDuration = 0.20;
+
+#pragma mark - SFPullToRefreshView
+static CGFloat kPullToRefreshRefreshThreshold = 110;
+static CGFloat kPullToRefreshIconHeightThreshold = 90;
+static CGFloat kPullToRefreshLabelFadeThreshold = 90;
 
 #pragma mark - Flickr API
 static NSString * const kApikey = @"949e98778755d1982f537d56236bbb42";
@@ -27,3 +45,7 @@ static NSString * const kApiSearchReturnFieldID = @"id";
 static NSString * const kApiSearchReturnFieldTitle = @"title";
 static NSString * const kApiSearchReturnFieldThumb = @"url_c";
 static NSString * const kApiSearchReturnFieldFull = @"url_l";
+
+#pragma mark - Notification Keys
+static NSString * const kNotificationKeyLightBoxLoad = @"LoadLightBox";
+static NSString * const kNotificationKeyLightBoxUnLoad = @"UnloadLightBox";

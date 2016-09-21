@@ -13,5 +13,5 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 -(void)configureCellWithFeedObject:(SFFeedObject *)object;
-
+-(void)cancelImageDownload;
 @end

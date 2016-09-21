@@ -17,6 +17,9 @@
 -(SFFeedObject *)getObjectAtIndex:(NSUInteger)idx;
 -(NSUInteger)numberOfObjects;
 -(void)appendFeedObjectsWithPage:(NSArray *)pageObjects;
+-(void)flushAllObjects;
 -(void)flushThumbs;
+-(void)isDownloadingImageForIndex:(NSUInteger)idx;
+-(void)assignImage:(UIImage *)image forIndex:(NSUInteger)idx;
 -(id)initWithDelegate:(id)del;
 @end

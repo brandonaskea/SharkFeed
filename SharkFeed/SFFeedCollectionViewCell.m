@@ -9,60 +9,62 @@
 #import "SFFeedCollectionViewCell.h"
 #import "SFConstants.h"
 
+@interface SFFeedCollectionViewCell () {
+    
+}
+
+@property (nonatomic) NSURLSession *session;
+
+@end
+
 @implementation SFFeedCollectionViewCell
 
 -(void)configureCellWithFeedObject:(SFFeedObject *)object {
     
+    self.contentView.clipsToBounds = YES;
+    self.contentView.layer.cornerRadius = kFeedCellCornerRadius;
     self.imageView.alpha = 0;
     
-    // If we already have the image we will place it there
+    // If we already have the image we will place it
     if (object.thumbImg) {
         dispatch_async(dispatch_get_main_queue(), ^{
+            
             self.imageView.image = object.thumbImg;
+            
+            // Fade in if didn't already
+            if (object.didPresentImage == NO) {
+                [UIView animateWithDuration:kImageFadeDuration animations:^{
+                    self.imageView.alpha = 1;
+                } completion:^(BOOL finished) {
+                    if (finished) {
+                        object.didPresentImage = YES;
+                    }
+                }];
+            }
+            else {
+                self.imageView.alpha = 1;
+            }
+            
+        });
+    }
+    
+    // If there is a missing image, display bundle image
+    if (object.isMissingImage) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+           self.imageView.image = [UIImage imageNamed:kMissingImage];
             self.imageView.alpha = 1;
         });
     }
-    else {
-        // Otherwise, make call to download image
-        [self downloadImageWithURL:object.thumbURL andCompletion:^(BOOL success, UIImage *image) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                if (success == YES) {
-                    self.imageView.image = image;
-                    object.thumbImg = image;
-                    
-                    // Fade in imageView
-                    [UIView animateWithDuration:kImageFadeDuration animations:^{
-                        self.imageView.alpha = 1;
-                    }];
-                }
-                else {
-                    object.isMissingImage = YES;
-                }
-            });
-        }];
-    }
     
-}
-
--(void)downloadImageWithURL:(NSString *)urlString andCompletion:(ThumbCompletion)completion {
-    
-    NSURL *url = [NSURL URLWithString:[urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
-    NSURLRequest *downloadThumbRequest = [NSURLRequest requestWithURL:url];
-    
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
-    [[session dataTaskWithRequest:downloadThumbRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if (data) {
-            completion(YES,[UIImage imageWithData:data]);
-        }
-        else {
-            completion(NO,nil);
-        }
-    }]resume];
-    [session finishTasksAndInvalidate];
 }
 
 -(void)prepareForReuse {
+    [super prepareForReuse];
     self.imageView.image = nil;
+}
+
+-(void)cancelImageDownload {
+    [self.session invalidateAndCancel];
 }
 
 @end

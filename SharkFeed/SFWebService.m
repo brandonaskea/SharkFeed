@@ -7,13 +7,14 @@
 //
 
 #import "SFWebService.h"
-#import "SFConstants.h"
 #import "SFFeedObject.h"
 
 @interface SFWebService ()
 
 @property (nonatomic) SFFetchedResultsController *fetchedResultsController;
 @property (assign) NSInteger currentPage;
+@property (nonatomic) NSURLSession *session;
+@property (nonatomic) NSMutableIndexSet *indeciesCurrentlyDownloading;
 
 @end
 
@@ -24,11 +25,18 @@
     self = [super init];
     
     if (self) {
+        self.indeciesCurrentlyDownloading = [[NSMutableIndexSet alloc]init];
         self.fetchedResultsController = frc;
         self.currentPage = 0;
     }
     
     return self;
+}
+
+-(void)refresh {
+    [self.indeciesCurrentlyDownloading removeAllIndexes];
+    self.currentPage = 0;
+    [self loadNextPage];
 }
 
 -(void)loadNextPage {
@@ -43,8 +51,8 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     // Make Call
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
-    [[session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    self.session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    [[self.session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         if (data) {
             
@@ -62,6 +70,7 @@
 
                     if ([key isEqualToString:kApiSearchReturnFieldPhoto]) {
                         
+                        NSUInteger idx = 0;
                         for (NSDictionary *photoDic in photosDic[key]) {
                             
                             // Parse photo into SFFeedObject
@@ -84,10 +93,13 @@
                             if (photoDic[kApiSearchReturnFieldFull]) {
                                 object.imgURL = photoDic[kApiSearchReturnFieldFull];
                             }
+                            // INDEX
+                            object.idx = idx;
                             
                             // Add to page collection
                             [pageObjects addObject:object];
-                            NSLog(@"%@",object.title);
+                            
+                            idx += 1;
                         }
                         
                     }
@@ -100,8 +112,33 @@
         }
 
     }]resume];
-    [session finishTasksAndInvalidate];
+    [self.session finishTasksAndInvalidate];
     
+}
+
+-(void)downloadImageWithURL:(NSString *)urlString forIndex:(NSUInteger)idx andCompletion:(PhotoCompletion)completion {
+    
+    NSURL *url = [NSURL URLWithString:[urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
+    NSURLRequest *downloadThumbRequest = [NSURLRequest requestWithURL:url];
+    
+    self.session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    [[self.session dataTaskWithRequest:downloadThumbRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (data) {
+            completion(YES,[UIImage imageWithData:data], idx);
+        }
+        else {
+            completion(NO,nil,0);
+        }
+    }]resume];
+    [self.session finishTasksAndInvalidate];
+}
+
+-(void)downloadingImageForIndex:(NSUInteger)idx {
+    [self.indeciesCurrentlyDownloading addIndex:idx];
+}
+
+-(BOOL)isDownloadingImageForIndex:(NSUInteger)idx {
+    return [self.indeciesCurrentlyDownloading containsIndex:idx];
 }
 
 @end
