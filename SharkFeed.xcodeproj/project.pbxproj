@@ -204,6 +204,7 @@
 				TargetAttributes = {
 					F8BBEC841D9081C800BCFDF7 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = A4LJ2YC4BS;
 					};
 				};
 			};
@@ -371,6 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A4LJ2YC4BS;
 				INFOPLIST_FILE = SharkFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.SharkFeed;
@@ -382,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A4LJ2YC4BS;
 				INFOPLIST_FILE = SharkFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yahoo.SharkFeed;
